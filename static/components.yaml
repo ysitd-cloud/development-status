@@ -1,0 +1,29 @@
+components:
+  - name: Policy Judge
+    git: judge
+    image: judge
+    description: Handle policy validation
+    version:
+      deploy:
+        full: 1.0.0-dev
+        major: 1
+        minor: 0
+        patch: 0
+        status: dev
+      head:
+        full: 1.1.0-dev
+        major: 1
+        minor: 1
+        patch: 0
+        status: dev
+  - name: Admin Panel
+    git: admin-panel
+    image: admin-panel
+    description: Panel for admin user to manage the cloud
+    version:
+      head:
+        full: 1.1.0-dev
+        major: 1
+        minor: 1
+        patch: 0
+        status: dev
