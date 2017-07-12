@@ -5,7 +5,7 @@ export default {
   mounted() {
     axios('/components.yaml')
       .then(response => yaml.safeLoad(response.data))
-      .then(({ components }) => {this.components = components});
+      .then(({ components }) => { this.components = components; });
   },
   data() {
     return {
