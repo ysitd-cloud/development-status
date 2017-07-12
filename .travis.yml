@@ -5,7 +5,7 @@ node_js:
 
 cache: yarn
 
-scripts:
+script:
   - yarn lint
   - yarn build
 
