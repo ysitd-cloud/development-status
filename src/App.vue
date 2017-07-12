@@ -10,7 +10,6 @@
           value="true"
           v-for="(item, i) in items"
           :key="i"
-          :router="!!item.to"
           :to="item.to"
         >
           <v-list-tile-action>
