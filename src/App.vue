@@ -42,10 +42,11 @@
                 </div>
               </v-card-text>
               <v-card-actions>
-                <v-btn tag="a" target="_blank" flat class="primary--text" :href="`https://github.com/ysitd-cloud/${component.git}`">
+                <v-btn
+                  v-if="component.git" tag="a" target="_blank" flat class="primary--text" :href="`https://github.com/ysitd-cloud/${component.git}`">
                   Github
                 </v-btn>
-                <v-btn tag="a" target="_blank" flat class="primary--text" :href="`https://hub.docker.com/r/ysitd/cloud-${component.image}`">
+                <v-btn v-if="component.image" tag="a" target="_blank" flat class="primary--text" :href="`https://hub.docker.com/r/ysitd/cloud-${component.image}`">
                   Docker
                 </v-btn>
               </v-card-actions>
