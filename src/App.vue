@@ -10,6 +10,8 @@
           value="true"
           v-for="(item, i) in items"
           :key="i"
+          :router="!!item.to"
+          :to="item.to"
         >
           <v-list-tile-action>
             <v-icon light v-html="item.icon"></v-icon>
@@ -39,15 +41,10 @@
   export default {
     data() {
       return {
-        clipped: false,
         drawer: true,
-        fixed: false,
         items: [
-          { icon: 'bubble_chart', title: 'Inspire' },
+          { icon: 'home', title: 'Home', to: { name: 'home' } },
         ],
-        miniVariant: false,
-        right: true,
-        rightDrawer: false,
         title: 'YSITD Cloud Development',
       };
     },
