@@ -1,4 +1,14 @@
 components:
+  - name: Account Manager
+    git: account
+    description: Manage user account
+    version:
+      head:
+        full: 1.0.0-dev
+        major: 1
+        minor: 0
+        patch: 0
+        status: dev
   - name: Admin Panel
     git: admin-panel
     image: admin-panel
