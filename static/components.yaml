@@ -4,11 +4,17 @@ components:
     description: Manage user account
     version:
       head:
-        full: 1.1.0-dev
+        full: 1.4.0-alpha
         major: 1
-        minor: 1
+        minor: 4
         patch: 0
-        status: dev
+        status: alpha
+      deploy:
+        full: 1.3.1-alpha
+        major: 1
+        minor: 3
+        patch: 1
+        status: alpha
   - name: Admin Panel
     git: admin-panel
     image: admin-panel
