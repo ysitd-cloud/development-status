@@ -1,6 +1,7 @@
 components:
   - name: Account Manager
     git: account
+    image: account
     description: Manage user account
     version:
       head:
