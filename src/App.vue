@@ -48,6 +48,7 @@
         provideDrawer: true,
         items: [
           { icon: 'home', title: 'Home', to: { name: 'home' } },
+          { icon: 'description', title: 'SLA', to: { name: 'sla' } },
         ],
         title: 'YSITD Cloud Development',
       };
