@@ -10,12 +10,6 @@ export default {
   data() {
     return {
       components: {},
-      drawer: false,
-      provideDrawer: false,
-      items: [
-        { icon: 'home', title: 'Home', to: { name: 'home' } },
-      ],
-      title: 'YSITD Cloud Development',
     };
   },
 };
