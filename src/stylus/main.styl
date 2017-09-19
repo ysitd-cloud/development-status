@@ -9,4 +9,12 @@ $theme := {
         error: $red.base
         success: $green.base
 }
+.navigation-drawer > .list .list__tile--active > *:first-child .icon
+  color: rgba(0,0,0,0.54) !important
+
+.navigation-drawer > .list .list__tile--active .list__tile__title
+  color: rgba(0,0,0,0.87) !important
+
+.navigation-drawer a.router-link-exact-active.list__tile--link > .list__tile__content > .list__tile__title, .navigation-drawer a.router-link-exact-active.list__tile--link > .list__tile__action > i.icon
+  color: #44A148 !important
 @import '../../node_modules/vuetify/src/stylus/main.styl'
