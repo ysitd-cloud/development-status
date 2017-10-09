@@ -1,7 +1,7 @@
 <template>
   <v-app light>
     <v-navigation-drawer
-      persistent
+      app
       v-model="drawer"
       v-if="provideDrawer"
     >
@@ -20,17 +20,18 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-      persistent>
-    <v-toolbar fixed dark class="primary">
+    <v-toolbar app fixed dark class="primary">
       <v-toolbar-side-icon @click.stop="drawer = !drawer" dark v-if="provideDrawer" />
       <v-toolbar-title v-text="title" />
     </v-toolbar>
     <main>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
+      <v-content>
+        <v-container fluid>
+          <router-view></router-view>
+        </v-container>
+      </v-content>
     </main>
-    <v-footer fixed>
+    <v-footer fixed app>
       <span>&copy; 2017 YSITD Cloud</span>
     </v-footer>
   </v-app>
