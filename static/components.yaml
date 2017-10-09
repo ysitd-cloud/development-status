@@ -11,10 +11,10 @@ components:
         patch: 0
         status: dev
       deploy:
-        full: 1.5.0-beta
+        full: 1.5.1-beta
         major: 1
         minor: 5
-        patch: 0
+        patch: 1
         status: beta
   - name: Admin Panel
     git: admin-panel
