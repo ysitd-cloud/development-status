@@ -11,8 +11,9 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, form, next) => {
-  window.ga('set', 'page', `${window.location.host}${to.path}`);
-  window.ga('send', 'pageview');
+  window.gtag('config', 'UA-103662489-3', {
+    page_path: to.path,
+  });
   next();
 });
 
