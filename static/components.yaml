@@ -5,16 +5,16 @@ components:
     description: Manage user account
     version:
       head:
-        full: 1.6.0-beta
+        full: 1.7.0-beta
         major: 1
         minor: 6
         patch: 0
         status: beta
       deploy:
-        full: 1.5.1-beta
+        full: 1.6.0-beta
         major: 1
-        minor: 5
-        patch: 1
+        minor: 6
+        patch: 0
         status: beta
   - name: Admin Panel
     git: admin-panel
