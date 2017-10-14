@@ -70,6 +70,6 @@
   "browserslist": [
     "> 5%",
     "last 5 versions",
-    "not ie"
+    "not ie <= 11"
   ]
 }
