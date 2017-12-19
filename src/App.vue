@@ -2,10 +2,11 @@
   <v-app light>
     <v-navigation-drawer
       app
+      fixed
       v-model="drawer"
       v-if="provideDrawer"
     >
-      <v-list>
+      <v-list dense>
         <v-list-tile
           v-for="(item, i) in items"
           :key="i"
@@ -24,13 +25,11 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer" dark v-if="provideDrawer" />
       <v-toolbar-title v-text="title" />
     </v-toolbar>
-    <main>
-      <v-content>
-        <v-container fluid>
-          <router-view></router-view>
-        </v-container>
-      </v-content>
-    </main>
+    <v-content>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-content>
     <v-footer fixed app>
       <span>&copy; 2017 YSITD Cloud</span>
     </v-footer>
