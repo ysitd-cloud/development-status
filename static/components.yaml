@@ -5,64 +5,70 @@ components:
     description: Manage user account
     version:
       head:
-        full: 1.7.0-beta
+        full: 1.7.1-rc
         major: 1
-        minor: 6
-        patch: 0
-        status: beta
+        minor: 7
+        patch: 1
+        status: rc
       deploy:
-        full: 1.6.0-beta
+        full: 1.7.0-rc
         major: 1
-        minor: 6
+        minor: 7
         patch: 0
-        status: beta
-  - name: Admin Panel
-    git: admin-panel
-    image: admin-panel
-    description: Panel for admin user to manage the cloud
-    version:
-      head:
-        full: 1.1.0-dev
-        major: 1
-        minor: 1
-        patch: 0
-        status: dev
+        status: rc
   - name: Development Status Site
     git: development-status
     description: Status of different component development
     version:
       deploy:
-        full: 1.3.1-rc
+        full: 1.4.0-rc
         major: 1
-        minor: 2
+        minor: 4
         patch: 0
         status: rc
       head:
-        full: 1.3.1-rc
+        full: 1.4.0-rc
         major: 1
-        minor: 2
+        minor: 4
         patch: 0
         status: rc
-  - name: Policy Judge
-    git: judge
-    image: judge
-    description: Handle policy validation
-    version:
-      deploy:
-        full: 1.1.0-dev
-        major: 1
-        minor: 1
-        patch: 0
-        status: dev
-      head:
-        full: 1.2.0-dev
-        major: 1
-        minor: 2
-        patch: 0
-        status: dev
   - name: App Controller
     git: app-controller
     description: Control deployment on k8s
+    version:
+      head:
+        full: 1.1.0-beta
+        major: 1
+        minor: 1
+        patch: 0
+        status: beta
+      deploy:
+        full: 1.0.0-beta
+        major: 1
+        minir: 0
+        patch: 0
+        status: beta
+  - name: Status API
+    git: status
+    image: status
+    description: Status API for Clusters
+    version:
+      deploy:
+        full: 1.1.0-rc
+        major: 1
+        minor: 1
+        patch: 0
+        status: rc
+      head:
+        full: 1.1.0-rc
+        major: 1
+        minor: 1
+        patch: 0
+        status: rc
+  - name: API Server
+    git: apiserver
+    image: apiserver
+    description: Public API Server
     version:
       head:
         full: 1.0.0-dev
@@ -70,19 +76,3 @@ components:
         minor: 0
         patch: 0
         status: dev
-  - name: Status API
-    git: status
-    description: Status API for Clusters
-    version:
-      deploy:
-        full: 1.0.0-rc
-        major: 1
-        minor: 0
-        patch: 0
-        status: rc
-      head:
-        full: 1.0.0-rc
-        major: 1
-        minor: 0
-        patch: 0
-        status: rc
