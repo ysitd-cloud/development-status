@@ -5,15 +5,15 @@ components:
     description: Manage user account
     version:
       head:
-        full: 1.7.1-rc
+        full: 1.8.1-rc
         major: 1
-        minor: 7
+        minor: 8
         patch: 1
         status: rc
       deploy:
-        full: 1.7.0-rc
+        full: 1.8.0-rc
         major: 1
-        minor: 7
+        minor: 8
         patch: 0
         status: rc
   - name: Development Status Site
@@ -21,13 +21,13 @@ components:
     description: Status of different component development
     version:
       deploy:
-        full: 1.4.0-rc
+        full: 1.4.1-rc
         major: 1
         minor: 4
-        patch: 0
+        patch: 1
         status: rc
       head:
-        full: 1.4.0-rc
+        full: 1.4.1-rc
         major: 1
         minor: 4
         patch: 0
@@ -37,15 +37,15 @@ components:
     description: Control deployment on k8s
     version:
       head:
-        full: 1.1.0-beta
+        full: 1.2.0-beta
         major: 1
-        minor: 1
+        minor: 2
         patch: 0
         status: beta
       deploy:
-        full: 1.0.0-beta
+        full: 1.1.0-beta
         major: 1
-        minir: 0
+        minir: 1
         patch: 0
         status: beta
   - name: Status API
@@ -70,9 +70,14 @@ components:
     image: apiserver
     description: Public API Server
     version:
-      head:
-        full: 1.0.0-dev
+      deploy:
+        full: 1.1.0-alpha
         major: 1
-        minor: 0
-        patch: 0
+        minor: 1
+        status: alpha
+      head:
+        full: 1.1.1-dev
+        major: 1
+        minor: 1
+        patch: 1
         status: dev
