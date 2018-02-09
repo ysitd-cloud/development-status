@@ -5,32 +5,32 @@ components:
     description: Manage user account
     version:
       head:
+        full: 1.8.2-rc
+        major: 1
+        minor: 8
+        patch: 2
+        status: rc
+      deploy:
         full: 1.8.1-rc
         major: 1
         minor: 8
         patch: 1
-        status: rc
-      deploy:
-        full: 1.8.0-rc
-        major: 1
-        minor: 8
-        patch: 0
         status: rc
   - name: Development Status Site
     git: development-status
     description: Status of different component development
     version:
       deploy:
-        full: 1.4.1-rc
+        full: 1.4.2-rc
         major: 1
         minor: 4
-        patch: 1
+        patch: 2
         status: rc
       head:
-        full: 1.4.1-rc
+        full: 1.4.2-rc
         major: 1
         minor: 4
-        patch: 0
+        patch: 2
         status: rc
   - name: App Controller
     git: app-controller
