@@ -1,0 +1,83 @@
+components:
+  - name: Account Manager
+    git: account
+    image: account
+    description: Manage user account
+    version:
+      head:
+        full: 1.8.2-rc
+        major: 1
+        minor: 8
+        patch: 2
+        status: rc
+      deploy:
+        full: 1.8.1-rc
+        major: 1
+        minor: 8
+        patch: 1
+        status: rc
+  - name: Development Status Site
+    git: development-status
+    description: Status of different component development
+    version:
+      deploy:
+        full: 1.4.2-rc
+        major: 1
+        minor: 4
+        patch: 2
+        status: rc
+      head:
+        full: 1.4.2-rc
+        major: 1
+        minor: 4
+        patch: 2
+        status: rc
+  - name: App Controller
+    git: app-controller
+    description: Control deployment on k8s
+    version:
+      head:
+        full: 1.2.0-beta
+        major: 1
+        minor: 2
+        patch: 0
+        status: beta
+      deploy:
+        full: 1.1.0-beta
+        major: 1
+        minir: 1
+        patch: 0
+        status: beta
+  - name: Status API
+    git: status
+    image: status
+    description: Status API for Clusters
+    version:
+      deploy:
+        full: 1.1.0-rc
+        major: 1
+        minor: 1
+        patch: 0
+        status: rc
+      head:
+        full: 1.1.0-rc
+        major: 1
+        minor: 1
+        patch: 0
+        status: rc
+  - name: API Server
+    git: apiserver
+    image: apiserver
+    description: Public API Server
+    version:
+      deploy:
+        full: 1.1.0-alpha
+        major: 1
+        minor: 1
+        status: alpha
+      head:
+        full: 1.1.1-dev
+        major: 1
+        minor: 1
+        patch: 1
+        status: dev
